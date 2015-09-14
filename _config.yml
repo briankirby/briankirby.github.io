@@ -1,0 +1,9 @@
+# Site settings
+title: Brian Kirby
+tag_text: Brian Kirby
+description: Physics and Programming
+
+# Build settings
+markdown: kramdown
+
+exclude: ["README.md"]
