@@ -1,13 +1,10 @@
 ---
 layout: default
 ---
+<img src="images/zerocool.jpg" alt="Zero Cool">
 
-##This is my blog
-more to come
-
-Based on [Solo](http://chibicode.github.io/solo) template for Jekyll.
+##[Blog](http://github.com/briankirby)/[Publications](http://github.com/briankirby)/[GitHub](http://github.com/briankirby)
 
 
-Brian Kirby ([GitHub](http://github.com/briankirby)).
 
 
