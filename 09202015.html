@@ -37,26 +37,23 @@ where \(\phi_{i}\) is a quantum state which the system could be in and \(p_{i}\)
 <br>
 The above definition is convenient if you have a set of pure states you're starting with and want to construct \(\rho\).
 <b>However, if you're just given a matrix, how can you tell if it's a valid density matrix? </b>
-The answer to this is that a valid density matrix must fulfill the following three conditions:
+The answer to this is that a valid density matrix must fulfill the following two conditions:
 $$
-Hermitian \;\;\;\; \rho = \rho^{\dagger},
-$$
-$$
-positive \;\;\;\; \rho \ge 0,
+positive\;semidefinite \;\;\;\; \rho \ge 0,
 $$
 $$
-normalized \;\;\;\; Tr\rho = 1,
+normalized \;\;\;\; \text{Tr}(\rho) = 1,
 $$
 where \(\dagger\) represents the conjugate transpose and Tr the trace.
-The condition of positivity can be restated as the requirement that all of the eigenvalues of \(\rho\) be greater than or equal to zero.
+The first condition of positivity can be defined in several equivalent ways, but often the most convenient for quantum information is that it's both Hermitian and all of the eigenvalues of \(\rho\) are greater than or equal to zero.
 <br>
 <br>
-It's easy then programmatically check if a given density matrix is valid given the above three conditions.
+It's easy then programmatically check if a given density matrix is valid given the above conditions.
 For example, in Mathematica this can be accomplished with:
 $$
 \text{ValidDensityMatrix}[\text{$\rho $in$\_$}]\text{:=}\text{Module}[\{\rho \},\rho =\text{$\rho $in};\text{If}[\text{HermitianMatrixQ}[\rho ]\land \min (\text{Eigenvalues}[\rho ])\geq 0\land \text{Tr}[\rho ]=1,\text{True},\text{False}]];
 $$
-where the joint if statement checks the three conditions above simultaneously.
+where the joint if statement checks the conditions above simultaneously.
 In my experience, however, HermitianMatrixQ can sometimes demand precision higher than I need, and will say a matrix is not Hermitian when I want it to.
 In these cases it can be useful to write your own check for this:
 $$
@@ -65,3 +62,4 @@ $$
 This function checks the definition of a Hermitian matrix (that it's self-adjoint) by subtracting the conjugate transpose of a matrix from it self and checking to make sure the resulting matrix is all zeros.
 The use of the Chop function seems to be what differentiates this from HermitianMatrixQ by setting numbers less than \(10^{-10}\) to zero.
 The tolerance of Chop can be altered as needed.
+I've also found that a similar problem can occur with precision when checking if the trace is unity, and a totally analogous solution of subtracting the two and chopping is useful here as well.
