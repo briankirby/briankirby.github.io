@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+     	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+     	<meta name="description" content="Brian Kirby's Website" >
+      	<meta name="author" content="Brian Kirby">
+      	<title>Brian Kirby</title>
+				<script type="text/javascript"
+			  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+			</script> <!--This adds mathjax-->
+	</head>
+
+<body>
+
+<center>
+<p style="margin:0px 0px 0px 0px">
+<a href="./images/brian_picture.jpg"><img src="./images/brian_picture.jpg" border="0"></a><br>
+<font size="6" >Brian Kirby, Ph.D.</font><br>
+<a href="mailto:bkirby57@gmail.com"><font>bkirby57@gmail.com</font></a> </p>
+<a href="./index.html">Home</a> | <a href="./notes.html">Notes</a> | <a href="./publications.html">Publications</a>
+| <a href="https://www.github.com/briankirby">Github</a> | <a href="https://www.linkedin.com/in/bkirby1">LinkedIn</a>
+</center>
+<br>
+<hr>
+<br>
+<!-- TITLE: The \(\psi^{-}\) Bell state at a beam splitter-->
+
+An important result in quantum optics is the Hong-Ou-Mandel effect [0], where two indistinguishable photons incident from different paths on a \(50/50\) beam splitter simultaneous will always leave together in the same output mode.
+This can be shown easily by considering the beam splitter transformations:
+$$
+c=\frac{1}{\sqrt{2}}(a+b),
+$$
+$$
+d=\frac{1}{\sqrt{2}}(a-b),
+$$
+where the \(a, b\) and \(c, d\) terms are the annihilation operators for the input and output ports respectively.
+The input state we are interested in then is given by \(a^{\dagger}b^{\dagger}\vert 0,0\rangle\), where the \(\vert 0,0\rangle\) state is a vacuum in each of the input modes of the beam splitter.
+Solving the above beam splitter relations and plugging them into this initial state results in
+$$
+a^{\dagger}b^{\dagger}\vert 0,0\rangle=\frac{1}{\sqrt{2}}(c^{\dagger}+d^{\dagger})\frac{1}{\sqrt{2}}(c^{\dagger}-d^{\dagger})\vert 0,0\rangle=\frac{1}{2}(c^{\dagger 2}-d^{\dagger 2})\vert 0,0\rangle.
+$$
+Therefore the photons are always created in the same output port.
+<br>
+<br>
+Less well known is that the opposite effect, where the photons always exit in different ports, can be found if we use entangled states.
+Specifically if we use the singlet Bell state given by
+$$
+\vert \psi^{-} \rangle=\frac{1}{\sqrt{2}}(a_{H}^{\dagger}b_{V}^{\dagger}-a_{V}^{\dagger}b_{H}^{\dagger})\vert 0,0\rangle,
+$$
+where \(H\) and \(V\) stand for horizontal and vertical polarization respectively.
+<br>
+<br>
+Since the beamsplitter we are considering is not polarizing we can rewrite the above relations as:
+$$
+c_{j}=\frac{1}{\sqrt{2}}(a_{j}+b_{j}),
+$$
+$$
+d_{j}=\frac{1}{\sqrt{2}}(a_{j}-b_{j}),
+$$
+where \(j\) represents the polarization.
+<br>
+<br>
+If we again solve these relations for the input modes and plug them into the \(\psi^{-}\) state above we find [1]:
+$$
+\frac{1}{\sqrt{2}}(a_{H}^{\dagger}b_{V}^{\dagger}-a_{V}^{\dagger}b_{H}^{\dagger})\vert 0,0\rangle
+$$
+$$
+=\frac{1}{\sqrt{2}}[\frac{1}{\sqrt{2}}(c_{H}^{\dagger}+d_{H}^{\dagger})\frac{1}{\sqrt{2}}(c_{V}^{\dagger}-d_{V}^{\dagger})-\frac{1}{\sqrt{2}}(c_{V}^{\dagger}+d_{V}^{\dagger})\frac{1}{\sqrt{2}}(c_{H}^{\dagger}-d_{H}^{\dagger})]\vert 0,0\rangle
+$$
+$$
+=\frac{1}{\sqrt{2}}[c_{V}^{\dagger}d_{H}^{\dagger}-c_{H}^{\dagger}d_{V}^{\dagger}]\vert 0,0\rangle.
+$$
+Therefore, we see that the photons will always leave in opposite arms.
+It's also interesting to point out the (seemingly) different normalization constants between this result and the Hong-Ou-Mandel result above.
+While they appear different in this form the Hong-Ou-Mandel result will pick up a \(\sqrt{2}\) when the creation operator is applied to the same vacuum mode twice.
+<br>
+<br>
+[0] Hong, C. K., Z. Y. Ou, and Leonard Mandel. "Measurement of subpicosecond time intervals between two photons by interference." Physical Review Letters 59.18 (1987): 2044.
+<br>
+[1] Braunstein, Samuel L., and A. Mann. "Measurement of the Bell operator and quantum teleportation." Physical Review A 51.3 (1995): R1727.
