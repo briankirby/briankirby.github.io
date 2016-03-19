@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+     	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+     	<meta name="description" content="Brian Kirby's Website" >
+      	<meta name="author" content="Brian Kirby">
+      	<title>Brian Kirby</title>
+				<script type="text/javascript"
+			  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+			</script> <!--This adds mathjax-->
+	</head>
+
+<body>
+
+<center>
+<p style="margin:0px 0px 0px 0px">
+<a href="./images/brian_picture.jpg"><img src="./images/brian_picture.jpg" border="0"></a><br>
+<font size="6" >Brian Kirby, Ph.D.</font><br>
+<a href="mailto:bkirby57@gmail.com"><font>bkirby57@gmail.com</font></a> </p>
+<a href="./index.html">Home</a> | <a href="./notes.html">Notes</a> | <a href="./publications.html">Publications</a>
+| <a href="https://scholar.google.com/citations?user=m2aJSxwAAAAJ&hl=en">Google Scholar</a> | <a href="https://www.github.com/briankirby">Github</a> | <a href="https://www.linkedin.com/in/bkirby1">LinkedIn</a>
+</center>
+<br>
+<hr>
+<br>
+Bell state measurements are an important basic operation used in quantum information processing.
+Abstractly, a Bell state measurement is the projection of a two qubit state onto the Bell states.
+The utility of this operation can be seen in, for example, quantum teleportation.
+<br>
+<br>
+While the concept of a Bell state measurement is straightforward, I often forget how a Bell measurement can be implemented using a simple circuit.
+For this reason, I am writing this very short derivation here for quick reference.
+<br>
+<br>
+A Bell state measurement can be performed on the two qubit state \(\vert\theta\rangle\) using the following operation:
+$$
+(\vert00\rangle\langle00\vert+\vert01\rangle\langle01\vert+\vert10\rangle\langle10\vert+\vert11\rangle\langle11\vert)(H\otimes I)(CNOT)\vert\theta\rangle,
+$$
+where \(H\) is a Hadamard gate, which operates as:
+$$
+H(|1\rangle) = \frac{1}{\sqrt{2}}(|0\rangle-|1\rangle)
+$$
+$$
+H(|0\rangle) = \frac{1}{\sqrt{2}}(|0\rangle+|1\rangle).
+$$
+The \(CNOT\) gate takes the state
+$$
+a|00\rangle + b|01\rangle + c|10\rangle + d|11\rangle
+$$
+into
+$$
+a|00\rangle + b|01\rangle + c|11\rangle + d|10\rangle.
+$$
+The projection operators are just the four possible measurement outcomes.
+Applying these operations we find:
+$$
+(\vert00\rangle\langle00\vert+\vert01\rangle\langle01\vert+\vert10\rangle\langle10\vert+\vert11\rangle\langle11\vert)(H\otimes I)(CNOT)\vert\theta\rangle
+$$
+$$
+(\frac{1}{\sqrt{2}}\vert00\rangle(\langle00\vert+\langle10\vert)+\frac{1}{\sqrt{2}}\vert01\rangle(\langle01\vert+\langle11\vert)+\frac{1}{\sqrt{2}}\vert10\rangle(\langle00\vert-\langle10\vert)+\frac{1}{\sqrt{2}}\vert11\rangle(\langle01\vert-\langle11\vert))(CNOT)\vert\theta\rangle
+$$
+$$
+(\frac{1}{\sqrt{2}}\vert00\rangle(\langle00\vert+\langle11\vert)+\frac{1}{\sqrt{2}}\vert01\rangle(\langle01\vert+\langle10\vert)+\frac{1}{\sqrt{2}}\vert10\rangle(\langle00\vert-\langle11\vert)+\frac{1}{\sqrt{2}}\vert11\rangle(\langle01\vert-\langle10\vert))\vert\theta\rangle
+$$
+$$
+(\vert00\rangle\langle\Phi^{+}\vert+\vert01\rangle\langle\Psi^{+}\vert+\vert10\rangle\langle\Phi^{-}\vert+\vert11\rangle\langle\Phi^{-}\vert)\vert\theta\rangle,
+$$
+which clearly projects \(\vert\theta\rangle\) onto the Bell states.
