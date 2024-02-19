@@ -29,6 +29,15 @@
 <h2>2024</h2>
 
 <ul>
+<li><b>SMC Is All You Need: Parallel Strong Scaling</b>
+<br> X. Liang, S. Lohani, J. M. Lukens, B. T. Kirby, T. A. Searles, K. J.H. Law
+<br><a href="https://arxiv.org/abs/2402.06173">arXiv:2402.06173</a>
+</ul>
+<ul>
+In the general framework of Bayesian inference, the target distribution can only be evaluated up-to a constant of proportionality. Classical consistent Bayesian methods such as sequential Monte Carlo (SMC) and Markov chain Monte Carlo (MCMC) have unbounded time complexity requirements. We develop a fully parallel sequential Monte Carlo (pSMC) method which provably delivers parallel strong scaling, i.e. the time complexity (and per-node memory) remains bounded if the number of asynchronous processes is allowed to grow. More precisely, the pSMC has a theoretical convergence rate of MSE=O(1/NR), where N denotes the number of communicating samples in each processor and R denotes the number of processors. In particular, for suitably-large problem-dependent N, as R→∞ the method converges to infinitesimal accuracy MSE=O(ε2) with a fixed finite time-complexity Cost=O(1) and with no efficiency leakage, i.e. computational complexity Cost=O(ε−2). A number of Bayesian inference problems are taken into consideration to compare the pSMC and MCMC methods.
+</ul>
+
+<ul>
 <li><b>Policies for multiplexed quantum repeaters: theory and practical performance analysis</b>
 <br> S. Haldar, P. J. Barge, X. Cheng, K.-C. Chang, B. T. Kirby, S. Khatri, C. W. Wong, H. Lee
 <br><a href="https://arxiv.org/abs/2401.13168">arXiv:2401.13168</a>
@@ -322,6 +331,17 @@ Quantum networks entangle remote nodes by distributing quantum states, which ine
 </ul>
 <ul>
 A protocol of measuring interferometric visibility function using imperfectly entangled states shared between remote telescopes is proposed. We demonstrate how quantum entanglement can be utilized to increase the baseline size of telescopic arrays thereby providing substantial enhancement to the resolution of direct-detection interferometric measurements. We demonstrate, through a comprehensive analysis, how errors in visibility measurements and in the intensity distribution of a distant object show dependence on the entanglement degree of the shared quantum resource. We analyse the feasibility of the protocol using currently available technology and identify the nature of sources that can benefit most from it.
+</ul>
+
+<h2>2017</h2>
+
+<ul>
+<li><b>Messages per secret bit when authentication and a min-entropy secrecy criterion are required</b>
+<br>E. Graves, B. T. Kirby, and P. L. Yu
+<br><a href="https://ieeexplore.ieee.org/abstract/document/7926144">In 2017 51st Annual Conference on Information Sciences and Systems (CISS), pp. 1-6. IEEE, 2017.</a>
+</ul>
+<ul>
+Suppose Alice and Bob share a secret key, of which Eve is initially oblivious. Clearly, Alice and Bob can use this key to ensure that any particular plain-message sent is both authentic and secure. This paper investigates how many plain-messages can be sent per bit of secret key, while still ensuring both secrecy and authentication. In particular the secrecy tolerance relates to the min-entropy of any individual plain message, given all observed cipher-messages, while the authentication tolerance directly relates to the maximum allowable probability of Bob erroneously accepting a cipher-message from Eve. In this paper we characterize the set of all messages to secret bit ratios. We do this by providing a direct and converse, showing that the maximum ratio is directly determined by the tolerance parameters for authentication and secrecy, and is independent of the ratio of the length of the plain-message to the length of the secret key.
 </ul>
 
 <h2>2016</h2>
