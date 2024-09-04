@@ -29,21 +29,32 @@
 <h2>2024</h2>
 
 <ul>
+<li><b>On the connection between least squares, regularization, and classical shadows</b>
+<br> Z. Zhu, J. M. Lukens, and B. T. Kirby
+<br><a href="https://quantum-journal.org/papers/q-2024-08-29-1455/"> Quantum 8, 1455 (2024) </a>
+<br><a href="https://arxiv.org/abs/2310.16921">arXiv:2310.16921</a>
+</ul>
+<ul>
+Classical shadows (CS) offer a resource-efficient means to estimate quantum observables, circumventing the need for exhaustive state tomography. Here, we clarify and explore the connection between CS techniques and least squares (LS) and regularized least squares (RLS) methods commonly used in machine learning and data analysis. By formal identification of LS and RLS" shadows" completely analogous to those in CS–namely, point estimators calculated from the empirical frequencies of single measurements–we show that both RLS and CS can be viewed as regularizers for the underdetermined regime, replacing the pseudoinverse with invertible alternatives. Through numerical simulations, we evaluate RLS and CS from three distinct angles: the tradeoff in bias and variance, mismatch between the expected and actual measurement distributions, and the interplay between the number of measurements and number of shots per measurement. Compared to CS, RLS attains lower variance at the expense of bias, is robust to distribution mismatch, and is more sensitive to the number of shots for a fixed number of state copies–differences that can be understood from the distinct approaches taken to regularization. Conceptually, our integration of LS, RLS, and CS under a unifying" shadow" umbrella aids in advancing the overall picture of CS techniques, while practically our results highlight the tradeoffs intrinsic to these measurement approaches, illuminating the circumstances under which either RLS or CS would be preferred, such as unverified randomness for the former or unbiased estimation for the latter.
+</ul>
+
+<ul>
+<li><b>Building a controlled-NOT gate between polarization and frequency</b>
+<br>H.-H. Lu, J. M. Lukens, M. Alshowkan, B. T. Kirby, and N. A. Peters
+<br><a href="https://opg.optica.org/opticaq/fulltext.cfm?uri=opticaq-2-4-282&id=554693"> Optica Quantum 2, 282-287 (2024) </a>
+<br><a href="https://arxiv.org/abs/2404.07317">arXiv:2404.07317</a>
+</ul>
+<ul>
+By harnessing multiple degrees of freedom (DoFs) within a single photon, controlled quantum unitaries, such as the two-qubit controlled-NOT (CNOT) gate, play a pivotal role in advancing quantum communication protocols like dense coding and entanglement distillation. In this work, we devise and realize a CNOT operation between polarization and frequency DoFs by exploiting directionally dependent electro-optic phase modulation within a fiber Sagnac loop. Alongside computational basis measurements, we validate the effectiveness of this operation through the synthesis of all four Bell states in a single photon, all with fidelities greater than 98%. This demonstration opens new avenues for manipulating hyperentanglement across these two crucial DoFs, marking a foundational step toward leveraging polarization-frequency resources in fiber networks for future quantum applications.
+</ul>
+
+<ul>
 <li><b>Noiseless Loss Suppression for Entanglement Distribution</b>
 <br>C. M. Nunn, D. E. Jones, T. B. Pittman, and B. T. Kirby
 <br><a href="https://arxiv.org/abs/2405.00510">arXiv:2405.00510</a>
 </ul>
 <ul>
 Recent work by Mičuda et al. (arXiv:1206.2852v1) suggests that pairing noiseless amplification with noiseless attenuation can conditionally suppress loss terms in the direct transmission of quantum states. Here we extend this work to entangled states: first, we explore bipartite states, specifically the two-mode squeezed vacuum (TMSV) and NOON states; and second, we examine M-partite states, concentrating on W and Greenberger-Horne-Zeilinger (GHZ) states. In analogy with the original proposal, our results demonstrate that in each case under consideration, a correct combination of attenuation and amplification techniques before and after transmission through a pure loss channel can restore the initial quantum state. However, we find that for both W and NOON states, the noiseless attenuation is redundant and not required to achieve loss term suppression. This work clarifies the role of noiseless attenuation when paired with noiseless amplification for entanglement distribution and provides an operational example of how GHZ and W state entanglement differs.
-</ul>
-
-<ul>
-<li><b>Building a controlled-NOT gate between polarization and frequency</b>
-<br>H.-H. Lu, J. M. Lukens, M. Alshowkan, B. T. Kirby, and N. A. Peters
-<br><a href="https://arxiv.org/abs/2404.07317">arXiv:2404.07317</a>
-</ul>
-<ul>
-By harnessing multiple degrees of freedom (DoFs) within a single photon, controlled quantum unitaries, such as the two-qubit controlled-NOT (CNOT) gate, play a pivotal role in advancing quantum communication protocols like dense coding and entanglement distillation. In this work, we devise and realize a CNOT operation between polarization and frequency DoFs by exploiting directionally dependent electro-optic phase modulation within a fiber Sagnac loop. Alongside computational basis measurements, we validate the effectiveness of this operation through the synthesis of all four Bell states in a single photon, all with fidelities greater than 98%. This demonstration opens new avenues for manipulating hyperentanglement across these two crucial DoFs, marking a foundational step toward leveraging polarization-frequency resources in fiber networks for future quantum applications.
 </ul>
 
 <ul>
@@ -103,15 +114,6 @@ Atmospheric effects, such as turbulence and background thermal noise, inhibit th
 </ul>
 <ul>
 In this work, we propose an improved method of training linear support vector machines (SVMs) to generate entanglement witnesses for systems of 3, 4, and 5 qubits. SVMs generate hyperplanes represented by a weighted sum of expectation values of local observables, whose coefficients are optimized to provide a positive sum for all separable states and a negative sum for as many entangled states as possible near a specific target state. We use the eigenstates of generalized Pauli matrices as training data, and correct the witnesses with a differential program. This method requires only O (6n) training states, whereas an existing method needs O (24n). We use this method to construct witnesses of 4 and 5 qubit GHZ states with coefficients agreeing with stabilizer formalism witnesses to within 6.5 percent and 1 percent, respectively. We also use the same training states to generate 4 and 5 qubit W state witnesses. Finally, we propose methods for physical and computational verification of these witnesses.
-</ul>
-
-<ul>
-<li><b>On the connection between least squares, regularization, and classical shadows</b>
-<br> Z. Zhu, J. M. Lukens, and B. T. Kirby
-<br><a href="https://arxiv.org/abs/2310.16921">arXiv:2310.16921</a>
-</ul>
-<ul>
-Classical shadows (CS) offer a resource-efficient means to estimate quantum observables, circumventing the need for exhaustive state tomography. Here, we clarify and explore the connection between CS techniques and least squares (LS) and regularized least squares (RLS) methods commonly used in machine learning and data analysis. By formal identification of LS and RLS "shadows" completely analogous to those in CS -- namely, point estimators calculated from the empirical frequencies of single measurements -- we show that both RLS and CS can be viewed as regularizers for the underdetermined regime, replacing the pseudoinverse with invertible alternatives. Through numerical simulations, we evaluate RLS and CS from three distinct angles: the tradeoff in bias and variance, mismatch between the expected and actual measurement distributions, and the interplay between the number of measurements and number of shots per measurement. Compared to CS, RLS attains lower variance at the expense of bias, is robust to distribution mismatch, and is more sensitive to the number of shots for a fixed number of state copies -- differences that can be understood from the distinct approaches taken to regularization. Conceptually, our integration of LS, RLS, and CS under a unifying "shadow" umbrella aids in advancing the overall picture of CS techniques, while practically our results highlight the tradeoffs intrinsic to these measurement approaches, illuminating the circumstances under which either RLS or CS would be preferred, such as unverified randomness for the former or unbiased estimation for the latter.
 </ul>
 
 <ul>
