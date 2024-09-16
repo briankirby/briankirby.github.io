@@ -39,6 +39,16 @@ Classical shadows (CS) offer a resource-efficient means to estimate quantum obse
 </ul>
 
 <ul>
+<li><b>An Exponential Reduction in Training Data Sizes for Machine Learning Derived Entanglement Witnesses</b>
+<br> A. R. Rosebush, A. C. B. Greenwood, B. T. Kirby, and L. Qian
+<br><a href="https://iopscience.iop.org/article/10.1088/2632-2153/ad7457/meta"> Mach. Learn. Sci. Technol. 5 035068 (2024) </a>
+<br><a href="https://arxiv.org/abs/2311.18162">arXiv:2311.18162</a>
+</ul>
+<ul>
+We propose a support vector machine (SVM) based approach for generating an entanglement witness that requires exponentially less training data than previously proposed methods. SVMs generate hyperplanes represented by a weighted sum of expectation values of local observables whose coefficients are optimized to sum to a positive number for all separable states and a negative number for as many entangled states as possible near a specific target state. Previous SVM-based approaches for entanglement witness generation used large amounts of randomly generated separable states to perform training, a task with considerable computational overhead. Here, we propose a method for orienting the witness hyperplane using only the significantly smaller set of states consisting of the eigenstates of the generalized Pauli matrices and a set of entangled states near the target entangled states. With the orientation of the witness hyperplane set by the SVM, we tune the plane's placement using a differential program that ensures perfect classification accuracy on a limited test set as well as maximal noise tolerance. For N qubits, the SVM portion of this approach requires only O(6^N) training states, whereas an existing method needs O(2^4^N). We use this method to construct witnesses of 4 and 5 qubit GHZ states with coefficients agreeing with stabilizer formalism witnesses to within 3.7 percent and 1 percent, respectively. We also use the same training states to generate novel 4 and 5 qubit W state witnesses. Finally, we computationally verify these witnesses on small test sets and propose methods for further verification.
+</ul>
+
+<ul>
 <li><b>Photonic crystal cavity IQ modulators in thin-film lithium niobate for coherent communications</b>
 <br> H. Larocque, D. L. P. Vitullo, A. Sludds, H. Sattari, I. Christen, G. Choong, I. Prieto, J. Leo, H. Zarebidaki, S. Lohani, B. T. Kirby, O. O. Soykal, M. Soltani, A. H. Ghadimi, D. Englund, and M. Heuck
 <br><a href="https://pubs.acs.org/doi/abs/10.1021/acsphotonics.4c01138"> ACS Photonics (2024) </a>
@@ -106,15 +116,6 @@ Future quantum networks will have nodes equipped with multiple quantum memories,
 </ul>
 <ul>
 Atmospheric effects, such as turbulence and background thermal noise, inhibit the propagation of light used in ON–OFF keying (OOK) free-space optical (FSO) communication. Here we present and experimentally validate a convolutional neural network (CNN) to reduce the bit error rate of FSO communication in post-processing that is significantly simpler and cheaper than existing solutions based on advanced optics. Our approach consists of two neural networks, the first determining the presence of bit sequences in thermal noise and turbulence and the second demodulating the bit sequences. All data used for training and testing our network is obtained experimentally by generating OOK bit streams, combining these with thermal light, and passing the resultant light through a turbulent water tank which we have verified mimics turbulence in the air to a high degree of accuracy. Our CNN improves detection accuracy over threshold classification schemes and has the capability to be integrated with current demodulation and error correction schemes.
-</ul>
-
-<ul>
-<li><b>An Exponential Reduction in Training Data Sizes for Machine Learning Derived Entanglement Witnesses</b>
-<br> A. R. Rosebush, A. C. B. Greenwood, B. T. Kirby, and L. Qian
-<br><a href="https://arxiv.org/abs/2311.18162">arXiv:2311.18162</a>
-</ul>
-<ul>
-In this work, we propose an improved method of training linear support vector machines (SVMs) to generate entanglement witnesses for systems of 3, 4, and 5 qubits. SVMs generate hyperplanes represented by a weighted sum of expectation values of local observables, whose coefficients are optimized to provide a positive sum for all separable states and a negative sum for as many entangled states as possible near a specific target state. We use the eigenstates of generalized Pauli matrices as training data, and correct the witnesses with a differential program. This method requires only O (6n) training states, whereas an existing method needs O (24n). We use this method to construct witnesses of 4 and 5 qubit GHZ states with coefficients agreeing with stabilizer formalism witnesses to within 6.5 percent and 1 percent, respectively. We also use the same training states to generate 4 and 5 qubit W state witnesses. Finally, we propose methods for physical and computational verification of these witnesses.
 </ul>
 
 <ul>
