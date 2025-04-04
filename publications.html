@@ -29,6 +29,26 @@
 <h2>2025</h2>
 
 <ul>
+<li><b>Deployed quantum link characterization via Bayesian ancilla-assisted process tomography</b>
+<br> A. Rahman, N. I. Wasserbeck, Z. Goisman, R. P. Fernandes, B. T. Kirby, M. Alshowkan, C. Kurtz, J. M. Lukens
+<br><a href="https://opg.optica.org/ol/abstract.cfm?uri=ol-50-8-2478">Opt. Lett. 50, 2478-2481 (2025)</a>
+<br><a href="https://arxiv.org/abs/2410.00892">arXiv:2410.00892</a>
+</ul>
+<ul>
+The development of large-scale quantum networks requires reliable quantum channels, the quality of which can be quantified by the framework of quantum process tomography. In this work, we leverage ancilla-assisted process tomography (AAPT) and Bayesian inference to probe a 1.6 km deployed fiber-optic link. We send one of the two polarization-entangled photons at Alice in one building to Bob in another, exploiting the local qubit as an ancilla system to characterize the corresponding quantum channel. Monitoring over a 24 h period returns a steady process fidelity of 97.6(1)%, while controllable spectral filtering with passbands from 0.025 to 4.38 THz finds fidelities that first increase, and then level off with bandwidth, suggesting both stable operation with time and minimal polarization mode dispersion. To our knowledge, these results represent the first AAPT of a deployed quantum link, revealing a valuable tool for in situ analysis of entanglement-based quantum networks.
+</ul>
+
+<ul>
+<li><b>Reducing classical communication costs in multiplexed quantum repeaters using hardware-aware quasi-local policies</b>
+<br> S. Haldar, P. J. Barge, X. Cheng, K.-C. Chang, B. T. Kirby, S. Khatri, C. W. Wong, H. Lee
+<br><a href="https://www.nature.com/articles/s42005-025-02029-w">Commun. Phys. 8, 132 (2025)</a>
+<br><a href="https://arxiv.org/abs/2401.13168">arXiv:2401.13168</a>
+</ul>
+<ul>
+Future quantum networks will have nodes equipped with multiple quantum memories, allowing for multiplexing and entanglement distillation strategies for long-distance entanglement distribution. In this work, we focus on quasi-local policies for multiplexed quantum repeater chains. In fully-local policies, nodes use the knowledge of only their own states, whereas more efficient global policies use knowledge of the entire network state. The classical communication costs of using this knowledge have not been explored in existing literature. We show that quasi-local policies not only obtain improved performance over local policies, but also reduce classical communication costs considerably. Our policies also outperform the widely studied nested purification and doubling policy in practical parameter regimes. We identify parameter regimes where distillation is useful and address the question: “Should we distill before swapping, or vice versa?” Finally, we propose an implementation scheme for a multiplexed repeater chain, experimentally demonstrate the key element, a high-dimensional biphoton frequency comb, and evaluate its anticipated performance using our multiplexing-based policies.
+</ul>
+
+<ul>
 <li><b>Polarization-Entanglement Dynamics in Optical Fibers: Mitigating Decay in the Non-Markovian Regime with Dynamical Decoupling</b>
 <br> P. J. Barge, A. Danageozian, M. K. Gupta, B. T. Kirby, H. Lee
 <br><a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.111.023501">Phys. Rev. A 111, 023501 (2025)</a>
@@ -58,15 +78,6 @@ Quantum state tomography (QST) remains the prevailing method for benchmarking an
 </ul>
 <ul>
 Recent work by Mičuda et al. (arXiv:1206.2852v1) suggests that pairing noiseless amplification with noiseless attenuation can conditionally suppress loss terms in the direct transmission of quantum states. Here we extend this work to entangled states: first, we explore bipartite states, specifically the two-mode squeezed vacuum (TMSV) and NOON states; and second, we examine M-partite states, concentrating on W and Greenberger-Horne-Zeilinger (GHZ) states. In analogy with the original proposal, our results demonstrate that in each case under consideration, a correct combination of attenuation and amplification techniques before and after transmission through a pure loss channel can restore the initial quantum state. However, we find that for both W and NOON states, the noiseless attenuation is redundant and not required to achieve loss term suppression. This work clarifies the role of noiseless attenuation when paired with noiseless amplification for entanglement distribution and provides an operational example of how GHZ and W state entanglement differs.
-</ul>
-
-<ul>
-<li><b>Deployed quantum link characterization via Bayesian ancilla-assisted process tomography</b>
-<br> A. Rahman, N. I. Wasserbeck, Z. Goisman, R. P. Fernandes, B. T. Kirby, M. Alshowkan, C. Kurtz, J. M. Lukens
-<br><a href="https://arxiv.org/abs/2410.00892">arXiv:2410.00892</a>
-</ul>
-<ul>
-The development of large-scale quantum networks requires reliable quantum channels, the quality of which can be quantified by the framework of quantum process tomography. In this work, we leverage ancilla-assisted process tomography and Bayesian inference to probe a 1.6 km deployed fiber-optic link. We send one of two polarization-entangled photons from Alice in one building to Bob in another, exploiting the local qubit as an ancilla system to characterize the corresponding quantum channel. Monitoring over a 24 h period returns a steady process fidelity of 95.1(1)%, while controllable spectral filtering with passbands from 0.025-4.38 THz finds fidelities that first increase, then level off with bandwidth, suggesting both stable operation with time and minimal polarization mode dispersion. To our knowledge, these results represent the first AAPT of a deployed quantum link, revealing a valuable tool for in situ analysis of entanglement-based quantum networks.
 </ul>
 
 <ul>
@@ -127,16 +138,6 @@ Entanglement distillation has many applications in quantum information processin
 <ul>
 In the general framework of Bayesian inference, the target distribution can only be evaluated up-to a constant of proportionality. Classical consistent Bayesian methods such as sequential Monte Carlo (SMC) and Markov chain Monte Carlo (MCMC) have unbounded time complexity requirements. We develop a fully parallel sequential Monte Carlo (pSMC) method which provably delivers parallel strong scaling, i.e. the time complexity (and per-node memory) remains bounded if the number of asynchronous processes is allowed to grow. More precisely, the pSMC has a theoretical convergence rate of MSE=O(1/NR), where N denotes the number of communicating samples in each processor and R denotes the number of processors. In particular, for suitably-large problem-dependent N, as R→∞ the method converges to infinitesimal accuracy MSE=O(ε2) with a fixed finite time-complexity Cost=O(1) and with no efficiency leakage, i.e. computational complexity Cost=O(ε−2). A number of Bayesian inference problems are taken into consideration to compare the pSMC and MCMC methods.
 </ul>
-
-<ul>
-<li><b>Policies for multiplexed quantum repeaters: theory and practical performance analysis</b>
-<br> S. Haldar, P. J. Barge, X. Cheng, K.-C. Chang, B. T. Kirby, S. Khatri, C. W. Wong, H. Lee
-<br><a href="https://arxiv.org/abs/2401.13168">arXiv:2401.13168</a>
-</ul>
-<ul>
-Future quantum networks will have nodes equipped with multiple quantum memories, providing the possibility to perform multiplexing and distillation strategies in order to increase fidelities and reduce waiting times for end-to-end entanglement distribution. In this paper, we introduce two policies that adapt the well-known swap-as-soon-as-possible (swap-asap) policy to multiplexed quantum repeater chains. Unlike the usual, fully local swap-asap policy, these policies are ``quasi-local", making effective use of knowledge of the states of the repeaters along the chain to optimize waiting times and end-to-end fidelities. Our policies also make use of entanglement distillation. We demonstrate via simulations one of our key findings, which is that these policies can outperform the well-known and widely studied nested purification and doubling swapping policy in practically relevant parameter regimes. Our work also provides the tools to carefully examine the role of entanglement distillation. We identify the parameter regimes in which performing distillation makes sense and is useful. In these regimes, we also address the question: ``Should we distill before swapping, or vice versa?" We thus formalize the trade-off between the advantages of adding distillation capabilities to quantum networks against their technological and practical challenges. Finally, to provide further practical guidance, we propose an experimental implementation of a multiplexing-based linear network, and experimentally demonstrate the key element, a high-dimensional biphoton frequency comb (BFC). We then evaluate the anticipated performance of our multiplexing-based policies in such a real-world network through simulation results for two concrete memory platforms, namely rare-earth ions and diamond vacancies.
-</ul>
-
 
 <h2>2023</h2>
 
